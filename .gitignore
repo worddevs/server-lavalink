@@ -33,6 +33,7 @@ Logs/
 .DS_Store
 Thumbs.db
 Desktop.ini
+application.yml
 
 # IDE & Editor configurations
 .idea/
