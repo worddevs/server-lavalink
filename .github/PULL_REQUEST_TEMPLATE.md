@@ -17,7 +17,7 @@ A clear and concise description of what this pull request modifies, fixes, or ad
 ## 🔗 Related Issues / Discussions
 
 Closes #
-Related to: [WORD DEVS Discord](https://invites.worddevs.dev/invite/discord)
+Related to: [WORD DEVS Discord](https://discord.gg/smp7hwrXr4)
 
 ---
 

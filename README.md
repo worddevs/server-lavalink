@@ -9,7 +9,7 @@
 [![Lavalink Version](https://img.shields.io/badge/Lavalink-v4.2.2-0052CC?style=for-the-badge&logo=spring&logoColor=white)](https://github.com/lavalink-devs/Lavalink/releases/tag/4.2.2)
 [![Java Runtime](https://img.shields.io/badge/Java-21%2B%20%7C%2025-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![GitHub Organization](https://img.shields.io/badge/GitHub-WORD--DEVS-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/worddevs)
-[![Discord Community](https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://invites.worddevs.dev/invite/discord)
+[![Discord Community](https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/smp7hwrXr4)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 </div>
@@ -46,7 +46,7 @@ You can connect your Discord bot directly to our live Lavalink node using the pa
 To obtain the current node password:
 
 1. Follow the official GitHub organization: **[@worddevs](https://github.com/worddevs)**
-2. Join our Discord community: **[𝐖𝐨𝐫𝐝 𝐃𝐞𝐯𝐬 ✨](https://invites.worddevs.dev/invite/discord)**
+2. Join our Discord community: **[𝐖𝐨𝐫𝐝 𝐃𝐞𝐯𝐬 ✨](https://discord.gg/smp7hwrXr4)**
 3. Head over to the designated infrastructure channel or request developer role access.
 
 ---
@@ -100,7 +100,7 @@ java -jar Lavalink.jar
 
 ## 🤝 Community & Support
 
-- **Discord Community**: [Join the 𝐖𝐨𝐫𝐝 𝐃𝐞𝐯𝐬 ✨ Discord](https://invites.worddevs.dev/invite/discord)
+- **Discord Community**: [Join the 𝐖𝐨𝐫𝐝 𝐃𝐞𝐯𝐬 ✨ Discord](https://discord.gg/smp7hwrXr4)
 - **GitHub Organization**: [Follow @worddevs](https://www.google.com/url?sa=E&source=gmail&q=https://github.com/worddevs)
 - **Issue Tracker**: Report crashes or plugin bugs via [GitHub Issues](https://www.google.com/search?q=https://github.com/worddevs/server-lavalink/issues)
 - **Contribution Guidelines**: Review [CONTRIBUTING.md](CONTRIBUTING.md) prior to opening pull requests
