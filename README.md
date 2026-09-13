@@ -37,7 +37,7 @@ You can connect your Discord bot directly to our live Lavalink node using the pa
 | Parameter        | Configuration Value                   |
 | :--------------- | :------------------------------------ |
 | **Host**         | `lava.worddevs.dev`                   |
-| **Port**         | `8117`                                |
+| **Port**         | `443`                                 |
 | **Secure (SSL)** | `true`                                |
 | **Password**     | _Restricted (See instructions below)_ |
 
