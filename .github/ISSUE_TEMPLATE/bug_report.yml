@@ -1,0 +1,58 @@
+name: "🐛 Bug Report"
+description: "Report an issue, track load failure, or plugin crash on the Lavalink node."
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue! Please make sure not to post sensitive data (passwords, complete tokens, IPs).
+
+  - type: input
+    id: lavalink-version
+    attributes:
+      label: Lavalink Version
+      description: What version of Lavalink are you running?
+      placeholder: "v4.2.2"
+    validations:
+      required: true
+
+  - type: input
+    id: java-version
+    attributes:
+      label: Java Version
+      description: The JVM runtime environment running the node.
+      placeholder: "Java 21 LTS / Java 25"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected-plugin
+    attributes:
+      label: Affected Component
+      description: Which source or plugin failed?
+      options:
+        - "YouTube Plugin (v1.18.2)"
+        - "LavaSrc / Spotify (v4.8.3)"
+        - "SponsorBlock (v3.0.1)"
+        - "Core Lavalink / WebSocket"
+        - "Pterodactyl Deployment"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of what the error is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Terminal Logs / Stack Trace
+      description: Paste any relevant logs from the console or `Logs/spring.log` (sanitize secrets first).
+      render: shell
+    validations:
+      required: false

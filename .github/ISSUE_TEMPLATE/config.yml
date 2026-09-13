@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "🔒 Security Vulnerability"
+    url: "https://github.com/WORD-DEVS/lavalink-server/security/advisories/new"
+    about: "Report private credentials leak or security issues privately."

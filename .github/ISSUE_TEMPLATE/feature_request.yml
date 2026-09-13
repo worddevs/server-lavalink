@@ -1,0 +1,24 @@
+name: "✨ Feature Request"
+description: "Suggest a new plugin, audio source, or infrastructure enhancement."
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to improve the WORD DEVS Lavalink node? Fill out the fields below.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Proposal Description
+      description: What would you like to see added or changed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: practical-use
+    attributes:
+      label: Practical Use Case
+      description: Why is this feature needed and how will it help bot integrations?
+    validations:
+      required: true

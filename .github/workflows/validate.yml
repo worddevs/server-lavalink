@@ -1,0 +1,38 @@
+name: Node Configuration Lint
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  validate-yaml:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python for YAML validation
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Validate YAML Configuration Files
+        run: |
+          python -c "
+          import yaml, glob
+          files = ['application.yml', 'applicationExample.yml']
+          for file in files:
+              try:
+                  with open(file, 'r', encoding='utf-8') as f:
+                      yaml.safe_load(f)
+                  print(f'✅ {file} is valid YAML')
+              except Exception as e:
+                  print(f'❌ Syntax error in {file}: {e}')
+                  exit(1)
+          "

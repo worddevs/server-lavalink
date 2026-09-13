@@ -1,0 +1,41 @@
+# ==========================================
+# 🔐 SECRETS & ENVIRONMENT VARIABLES
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# Credentials & persistent session stores
+Config/cookies.json
+oauth-tokens.json
+
+# ==========================================
+# 📦 BINARIES & EXECUTABLES
+# ==========================================
+# Exclude main Lavalink jar (download via releases/curl)
+Lavalink.jar
+*.jar
+!Plugins/*.jar
+
+# Java compilation artifacts
+*.class
+target/
+build/
+
+# ==========================================
+# 📋 RUNTIME LOGS & SYSTEM CACHE
+# ==========================================
+Logs/
+*.log
+*.tmp
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor configurations
+.idea/
+.vscode/
+*.suo
+*.user

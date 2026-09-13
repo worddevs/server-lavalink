@@ -1,0 +1,33 @@
+# ========================================================
+# ⚙️ LINE ENDINGS & NORMALIZATION
+# ========================================================
+* text=auto eol=lf
+
+# Platform-specific scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.sh  text eol=lf
+
+# Structured configuration & docs
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.env* text eol=lf
+*.md   text eol=lf
+
+# Binary files
+*.jar binary
+*.png binary
+*.jpg binary
+*.ico binary
+
+# ========================================================
+# 📊 GITHUB LINGUIST LANGUAGE OVERRIDES
+# Force GitHub repository stats to index & display YAML
+# ========================================================
+*.yml linguist-detectable=true linguist-language=YAML
+*.yaml linguist-detectable=true linguist-language=YAML
+*.json linguist-documentation=true
+*.md linguist-documentation=true
+Scripts/* linguist-detectable=true

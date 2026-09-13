@@ -1,0 +1,116 @@
+server:
+  port: ${LAVALINK_PORT:1234}
+  address: ${LAVALINK_ADDRESS:0.0.0.0}
+  http2:
+    enabled: true
+
+lavalink:
+  plugins:
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.18.2"
+      repository: "https://maven.lavalink.dev/releases"
+    - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.8.3"
+      repository: "https://maven.lavalink.dev/releases"
+    - dependency: "com.github.topi314.sponsorblock:sponsorblock-plugin:3.0.1"
+      repository: "https://maven.lavalink.dev/releases"
+
+  server:
+    password: "${LAVALINK_PASSWORD:youshallnotpass}"
+    playerUpdateInterval: 5
+    bufferDurationMs: 400
+    frameBufferDurationMs: 5000
+    opusEncodingQuality: 10
+    resamplingQuality: LOW
+    trackStuckThresholdMs: 10000
+    useSeekGhosting: true
+    gc-warnings: true
+    youtubePlaylistLoadLimit: 50
+    youtubeSearchEnabled: true
+    soundcloudSearchEnabled: false
+    sources:
+      youtube: false
+      bandcamp: false
+      soundcloud: false
+      twitch: false
+      vimeo: false
+      http: true
+      local: false
+    filters:
+      volume: true
+      equalizer: true
+      karaoke: true
+      timescale: true
+      tremolo: true
+      vibrato: true
+      distortion: true
+      rotation: true
+      channelMix: true
+      lowPass: true
+
+plugins:
+  youtube:
+    enabled: true
+    allowSearch: true
+    allowDirectVideoIds: true
+    allowDirectPlaylistIds: true
+    clients:
+      - MUSIC
+      - WEB
+      - ANDROID
+      - TVHTML5EMBEDDED
+    oauth:
+      enabled: true
+      skipInitialization: ${YOUTUBE_SKIP_INIT:false}
+      refreshToken: "${YOUTUBE_REFRESH_TOKEN:}"
+    pot:
+      token: "${YOUTUBE_PO_TOKEN:}"
+      visitorData: "${YOUTUBE_VISITOR_DATA:}"
+
+  lavasrc:
+    providers:
+      - 'ytsearch:"%ISRC%"'
+      - "ytsearch:%QUERY%"
+    sources:
+      spotify: true
+      applemusic: false
+      deezer: false
+      yandexmusic: false
+      flowerytts: false
+    spotify:
+      clientId: "${SPOTIFY_CLIENT_ID:}"
+      clientSecret: "${SPOTIFY_CLIENT_SECRET:}"
+      countryCode: "${SPOTIFY_COUNTRY_CODE:US}"
+      playlistLoadLimit: 50
+      albumLoadLimit: 50
+
+  sponsorblock:
+    categories:
+      - "sponsor"
+      - "intro"
+      - "selfpromo"
+
+metrics:
+  prometheus:
+    enabled: false
+    endpoint: /metrics
+
+sentry:
+  dsn: ""
+  environment: ""
+
+logging:
+  file:
+    path: ./Logs/
+  level:
+    root: INFO
+    lavalink: INFO
+  logback:
+    rollingpolicy:
+      max-file-size: 1GB
+      max-history: 30
+  request:
+    enabled: true
+    includeClientInfo: true
+    includeHeaders: false
+    includePayload: true
+    includeQueryString: true
+    maxPayloadLength: 10000
